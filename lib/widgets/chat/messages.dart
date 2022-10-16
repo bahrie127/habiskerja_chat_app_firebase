@@ -22,6 +22,8 @@ class Messages extends StatelessWidget {
         }
         final chatDocs = chatSnapshot.data!.docs;
         return ListView.builder(
+          physics: const AlwaysScrollableScrollPhysics(
+              parent: BouncingScrollPhysics()),
           reverse: true,
           itemCount: chatDocs.length,
           itemBuilder: (ctx, index) {

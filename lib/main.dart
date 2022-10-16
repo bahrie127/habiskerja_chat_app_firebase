@@ -22,12 +22,10 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Flutter chat',
           theme: ThemeData(
-            primarySwatch: Colors.pink,
-            backgroundColor: Colors.pink,
-            accentColor: Colors.deepPurple,
-            accentColorBrightness: Brightness.dark,
+            primarySwatch: Colors.brown,
+            backgroundColor: Colors.grey,
             buttonTheme: ButtonTheme.of(context).copyWith(
-              buttonColor: Colors.pink,
+              buttonColor: Colors.brown,
               textTheme: ButtonTextTheme.primary,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
