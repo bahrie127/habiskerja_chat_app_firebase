@@ -28,8 +28,12 @@ class MessageBubble extends StatelessWidget {
                 borderRadius: BorderRadius.only(
                   topLeft: const Radius.circular(12),
                   topRight: const Radius.circular(12),
-                  bottomLeft: !isMe ? const Radius.circular(0) : const Radius.circular(12),
-                  bottomRight: isMe ? const Radius.circular(0) : const Radius.circular(12),
+                  bottomLeft: !isMe
+                      ? const Radius.circular(0)
+                      : const Radius.circular(12),
+                  bottomRight: isMe
+                      ? const Radius.circular(0)
+                      : const Radius.circular(12),
                 ),
               ),
               width: 140,
@@ -49,17 +53,13 @@ class MessageBubble extends StatelessWidget {
                     userName,
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
-                      color:
-                          // isMe ? Colors.black : Colors.grey,
-                          Colors.black,
+                      color: Colors.black,
                     ),
                   ),
                   Text(
                     message,
                     style: const TextStyle(
-                      color:
-                          // isMe ? Colors.black : Colors.grey,
-                          Colors.black,
+                      color: Colors.black,
                     ),
                   ),
                 ],

@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       future: _initialization,
       builder: (context, appSnapshot) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Flutter chat',
           theme: ThemeData(
             primarySwatch: Colors.brown,
